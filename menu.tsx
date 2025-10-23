@@ -20,7 +20,6 @@ type MenuProps = {
 };
 
 export default function Menu({ route, navigation }: MenuProps) {
-  // safe access in case route or navigation is undefined
   const menuItems = route?.params?.menuItems ?? [];
 
   return (
